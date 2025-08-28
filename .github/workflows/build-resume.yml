@@ -1,0 +1,42 @@
+name: Build Resume
+
+on:
+  push:
+    branches: [ main ]
+    paths: 
+      - "resume.yml"
+      - "*.yml"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Build PDF with YAMLResume
+      run: |
+        # Create output directory
+        mkdir -p output
+        
+        # Build resume using Docker
+        docker run --rm -v $(pwd):/home/yamlresume yamlresume/yamlresume build resume.yml
+        
+        # Move generated PDF to output directory
+        mv resume.pdf output/resume.pdf || echo "PDF already in correct location"
+        
+    - name: Upload PDF as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: resume-pdf
+        path: output/resume.pdf
+        
+    - name: Commit and push PDF
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add output/resume.pdf
+        git diff --staged --quiet || git commit -m "Auto-update resume PDF"
+        git push

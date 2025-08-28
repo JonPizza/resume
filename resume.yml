@@ -1,0 +1,92 @@
+person:
+  name: "Jon York"
+  email: "jy7580@princeton.edu"
+  phone: "+1 (860) 994-6293"
+  location: "West Hartford, CT"
+  website: "https://jonyork.net"
+  linkedin: ""   # Add if available
+  github: ""     # Add if available
+
+summary: |
+  Electrical and Computer Engineering student at Princeton University with strong experience in AI, web development, and cybersecurity. Proven track record in software engineering internships, entrepreneurship, and competitive programming. Passionate about building scalable applications and optimizing systems for performance.
+
+experience:
+  - company: "Bionic Ads"
+    position: "Software Engineering Intern"
+    startDate: "2024-06"
+    endDate: "2025-08"
+    location: "Remote"
+    highlights:
+      - "Developed Jaime, a RAG-based chatbot integrated with HubSpot CRM, delivering instant customer support and automated email suggestions."
+      - "Built Yoshimi, an AI agent for data analysis and visualization to optimize advertising campaigns."
+      - "Improved operational efficiency by reducing customer service response times significantly."
+
+  - company: "Zyfo.ai"
+    position: "Founder & CEO"
+    startDate: "2023-09"
+    endDate: "Present"
+    location: "Remote"
+    highlights:
+      - "Launched and scaled a profitable SaaS platform enabling one-click website generation."
+      - "Deployed over 500 websites using a seamless prompt-to-deploy model."
+      - "Maintained and secured infrastructure supporting hundreds of active users."
+
+  - company: "HackerOne"
+    position: "Bug Bounty Hunter"
+    startDate: "2022-06"
+    endDate: "2022-08"
+    location: "Remote"
+    highlights:
+      - "Identified and reported a critical vulnerability impacting thousands of telecom customers."
+      - "Developed skills in reconnaissance and advanced web exploitation techniques."
+
+  - company: "theCoderSchool"
+    position: "Code Coach"
+    startDate: "2021-06"
+    endDate: "2021-08"
+    location: "West Hartford, CT"
+    highlights:
+      - "Taught programming to students aged 5–16 in Java and Python."
+      - "Created customized lesson plans to improve engagement and learning outcomes."
+
+education:
+  - institution: "Princeton University"
+    degree: "Bachelor of Science in Electrical and Computer Engineering"
+    startDate: "2024-09"
+    endDate: "2028-05"
+    gpa: "3.58"
+
+  - institution: "Hall High School"
+    degree: "High School Diploma"
+    startDate: "2020-08"
+    endDate: "2024-06"
+    gpa: "4.25"
+    highlights:
+      - "SAT: 1550/1600"
+      - "American Math Competition School Champion"
+      - "NHS President, Improv Club Member"
+      - "Men’s XC, Indoor & Outdoor Track Captain, 5x State Champion, School record holder in 100m, 200m, and 400m"
+
+skills:
+  - category: "Programming Languages"
+    items: ["Python", "Java", "JavaScript", "Solidity", "C/C++"]
+  - category: "Web Development"
+    items: ["Full-Stack Development", "Frontend & Backend Integration"]
+  - category: "Other Technical Skills"
+    items: ["Reverse Engineering", "Binary Exploitation", "AI/ML", "Cybersecurity"]
+
+projects:
+  - name: "Zyfo.ai"
+    description: "A SaaS platform for instant website generation and deployment, currently hosting 500+ websites."
+    technologies: ["JavaScript", "Node.js", "AI Automation"]
+    url: "https://zyfo.ai"
+
+  - name: "AI Customer Support Agent (Jaime)"
+    description: "RAG-based chatbot integrated with HubSpot CRM to provide instant customer support and automated email suggestions."
+    technologies: ["Python", "LangChain", "HubSpot API"]
+    url: ""
+
+  - name: "Advertising Analytics Agent (Yoshimi)"
+    description: "AI assistant for analyzing ad performance, generating visualizations, and producing detailed reports."
+    technologies: ["Python", "Pandas", "Matplotlib"]
+    url: ""
