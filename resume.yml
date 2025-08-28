@@ -73,7 +73,7 @@ content:
     - name: PPResume
       url: https://ppresume.com
       startDate: Dec 1, 2022
-      endDate: "Present"
+      endDate: Jul 1, 2025
       position: Senior Software Engineer
       summary: |
         - Developed and implemented efficient and scalable code, ensuring high-quality and maintainable web applications
