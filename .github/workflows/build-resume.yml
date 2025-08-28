@@ -25,7 +25,7 @@ jobs:
         
         # Install additional dependencies that might be needed
         sudo apt-get update
-        sudo apt-get install -y wkhtmltopdf texlive-xetex texlive-fonts-recommended texlive-latex-extra
+        sudo apt-get install -y wkhtmltopdf texlive-xetex texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra texlive-latex-recommended fonts-liberation fonts-dejavu
 
     - name: Build PDF
       run: |
