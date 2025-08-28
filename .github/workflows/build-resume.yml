@@ -3,9 +3,6 @@ name: Build Resume
 on:
   push:
     branches: [ main ]
-    paths: 
-      - "resume.yml"
-      - "*.yml"
   workflow_dispatch:
 
 jobs:
@@ -28,8 +25,8 @@ jobs:
         
         # Install additional dependencies that might be needed
         sudo apt-get update
-        sudo apt-get install -y wkhtmltopdf
-        
+        sudo apt-get install -y wkhtmltopdf texlive-xetex texlive-fonts-recommended texlive-latex-extra
+
     - name: Build PDF
       run: |
         # Create output directory
